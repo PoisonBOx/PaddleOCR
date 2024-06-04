@@ -17,6 +17,7 @@ from __future__ import division
 from __future__ import print_function
 
 import os
+os.environ['KMP_DUPLICATE_LIB_OK']='True'
 import sys
 import platform
 import yaml

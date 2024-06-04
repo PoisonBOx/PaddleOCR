@@ -80,9 +80,9 @@ Train:
 Eval:
   dataset:
     name: SimpleDataSet
-    data_dir: ./data/eval/
+    data_dir: ./data/rec/eval/imgs/
     label_file_list:
-    - ./data/eval/eval_list.txt
+    - ./data/rec/eval/eval_list.txt
     transforms:
       - DecodeImage: # load image
           img_mode: BGR

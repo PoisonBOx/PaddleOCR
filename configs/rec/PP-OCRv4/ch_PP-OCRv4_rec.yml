@@ -108,7 +108,7 @@ Train:
   loader:
     shuffle: true
     batch_size_per_card: *bs
-    drop_last: true
+    drop_last: false
     num_workers: 8
 Eval:
   dataset:

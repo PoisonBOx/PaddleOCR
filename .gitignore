@@ -10,7 +10,6 @@ __pycache__/
 inference/
 inference_results/
 output/
-data/
 log/
 *.DS_Store
 *.vs
@@ -18,7 +17,7 @@ log/
 *~
 *.vscode
 *.idea
-
+*.jpg
 *.log
 .clang-format
 .clang_format.hook

@@ -59,9 +59,9 @@ Metric:
 Train:
   dataset:
     name: SimpleDataSet
-    data_dir: ./data/train/
+    data_dir: ./data/rec/train/imgs/
     label_file_list:
-    - ./data/train/train_list.txt
+    - ./data/rec/train/train_list.txt
     transforms:
       - DecodeImage: # load image
           img_mode: BGR
@@ -74,7 +74,7 @@ Train:
   loader:
     shuffle: False
     batch_size_per_card: 256
-    drop_last: True
+    drop_last: False
     num_workers: 8
 
 Eval:

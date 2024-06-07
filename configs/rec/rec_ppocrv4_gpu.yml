@@ -1,5 +1,5 @@
 Global:
-  use_gpu: False
+  use_gpu: True
   epoch_num: 2000
   log_smooth_window: 20
   print_batch_step: 10
@@ -72,9 +72,9 @@ Metric:
 Train:
   dataset:
     name: SimpleDataSet
-    data_dir: ./data/rec/train/imgs/
+    data_dir: /kaggle/input/ocr-rec-train-eval-sample-data/rec/train/imgs/ #./data/rec/train/imgs/
     label_file_list:
-    - ./data/rec/train/train_list.txt
+    - /kaggle/input/ocr-rec-train-eval-sample-data/rec/train/train_list.txt #./data/rec/train/train_list.txt
     transforms:
       - DecodeImage: # load image
           img_mode: BGR
@@ -99,9 +99,9 @@ Train:
 Eval:
   dataset:
     name: SimpleDataSet
-    data_dir: ./data/rec/eval/imgs/
+    data_dir: /kaggle/input/ocr-rec-train-eval-sample-data/rec/eval/imgs/ #./data/rec/eval/imgs/
     label_file_list:
-    - ./data/rec/eval/eval_list.txt
+    - /kaggle/input/ocr-rec-train-eval-sample-data/rec/eval/eval_list.txt #./data/rec/eval/eval_list.txt
     transforms:
       - DecodeImage: # load image
           img_mode: BGR

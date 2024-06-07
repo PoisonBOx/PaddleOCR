@@ -111,7 +111,12 @@ Eval:
       - RecResizeImg:
           image_shape: [3, 32, 100]
       - KeepKeys:
-          keep_keys: ['image', 'label', 'length'] # dataloader will return list in this order
+          keep_keys: #['image', 'label', 'length'] # dataloader will return list in this order
+            - image
+            - label_ctc
+            - label_gtc
+            - length
+            - valid_ratio
   loader:
     shuffle: False
     drop_last: False

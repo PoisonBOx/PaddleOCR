@@ -2,7 +2,7 @@ Global:
   use_gpu: True
   epoch_num: 2000
   log_smooth_window: 20
-  print_batch_step: 10
+  print_batch_step: 200
   save_model_dir: ./output/rec/rec_ppocr_v4/
   save_epoch_step: 100
   # evaluation is run every 2000 iterations

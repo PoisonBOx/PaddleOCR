@@ -1,10 +1,10 @@
 Global:
   use_gpu: False
-  epoch_num: 200
+  epoch_num: 2000
   log_smooth_window: 20
   print_batch_step: 10
   save_model_dir: ./output/rec/rec_ppocr_v4/
-  save_epoch_step: 10
+  save_epoch_step: 100
   # evaluation is run every 2000 iterations
   eval_batch_step: [0, 2000]
   cal_metric_during_train: True
@@ -72,9 +72,9 @@ Metric:
 Train:
   dataset:
     name: SimpleDataSet
-    data_dir: ./data/rec/train/imgs/
+    data_dir: /kaggle/input/ocr-rec-train-eval-sample-data/rec/train/imgs/ #./data/rec/train/imgs/
     label_file_list:
-    - ./data/rec/train/train_list.txt
+    - /kaggle/input/ocr-rec-train-eval-sample-data/rec/train/train_list.txt #./data/rec/train/train_list.txt
     transforms:
       - DecodeImage: # load image
           img_mode: BGR
@@ -99,9 +99,9 @@ Train:
 Eval:
   dataset:
     name: SimpleDataSet
-    data_dir: ./data/rec/eval/imgs/
+    data_dir: /kaggle/input/ocr-rec-train-eval-sample-data/rec/eval/imgs/ #./data/rec/eval/imgs/
     label_file_list:
-    - ./data/rec/eval/eval_list.txt
+    - /kaggle/input/ocr-rec-train-eval-sample-data/rec/eval/eval_list.txt #./data/rec/eval/eval_list.txt
     transforms:
       - DecodeImage: # load image
           img_mode: BGR

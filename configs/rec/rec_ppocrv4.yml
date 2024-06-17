@@ -2,14 +2,14 @@ Global:
   use_gpu: False
   epoch_num: 2000
   log_smooth_window: 20
-  print_batch_step: 10
-  save_model_dir: ./output/rec/rec_ppocr_v4/
+  print_batch_step: 50
+  save_model_dir: C:/projects/models/rec_ppocrv4_129_latest/latest
   save_epoch_step: 100
   # evaluation is run every 2000 iterations
-  eval_batch_step: [0, 2000]
+  eval_batch_step: [0, 300]
   cal_metric_during_train: True
   pretrained_model: ./pretrained/ch_PP-OCRv4_rec_train/student
-  checkpoints:
+  checkpoints: C:/projects/models/rec_ppocrv4_129_latest/latest
   save_inference_dir:
   use_visualdl: False
   infer_img: doc/imgs_words_en/word_10.png
@@ -72,9 +72,9 @@ Metric:
 Train:
   dataset:
     name: SimpleDataSet
-    data_dir: ./data/rec/train/imgs/
+    data_dir: /kaggle/input/ocr-rec-train-eval-sample-data/rec/train/imgs/ #./data/rec/train/imgs/
     label_file_list:
-    - ./data/rec/train/train_list.txt
+    - /kaggle/input/ocr-rec-train-eval-sample-data/rec/train/train_list.txt #./data/rec/train/train_list.txt
     transforms:
       - DecodeImage: # load image
           img_mode: BGR
@@ -99,9 +99,9 @@ Train:
 Eval:
   dataset:
     name: SimpleDataSet
-    data_dir: ./data/rec/eval/imgs/
+    data_dir: /kaggle/input/ocr-rec-train-eval-sample-data/rec/eval/imgs/ #./data/rec/eval/imgs/
     label_file_list:
-    - ./data/rec/eval/eval_list.txt
+    - /kaggle/input/ocr-rec-train-eval-sample-data/rec/eval/eval_list.txt #./data/rec/eval/eval_list.txt
     transforms:
       - DecodeImage: # load image
           img_mode: BGR
@@ -111,7 +111,12 @@ Eval:
       - RecResizeImg:
           image_shape: [3, 32, 100]
       - KeepKeys:
-          keep_keys: ['image', 'label', 'length'] # dataloader will return list in this order
+          keep_keys: #['image', 'label', 'length'] # dataloader will return list in this order
+            - image
+            - label_ctc
+            - label_gtc
+            - length
+            - valid_ratio
   loader:
     shuffle: False
     drop_last: False

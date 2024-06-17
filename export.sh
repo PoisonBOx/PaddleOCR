@@ -1,0 +1,1 @@
+python tools/export_model.py -c configs/rec/rec_ppocrv4.yml -o Global.pretrained_model=C:/projects/models/rec_ppocrv4_129_latest/latest  Global.save_inference_dir=./weights

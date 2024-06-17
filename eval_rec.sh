@@ -1,0 +1,1 @@
+python tools/eval.py -c configs/rec/rec_ppocrv4.yml -o Global.checkpoints=./weights/inference

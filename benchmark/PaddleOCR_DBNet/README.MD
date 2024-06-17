@@ -77,7 +77,7 @@ bash multi_gpu_train.sh
 1. config `model_path` in [eval.sh](eval.sh)
 2. use following script to test
 ```bash
-bash eval.sh
+bash eval_rec.sh
 ```
 
 ## Predict 

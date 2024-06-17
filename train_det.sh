@@ -1,0 +1,1 @@
+python tools/train.py -c configs/det/det_mv3_db_medical.yml -o Global.pretrained_model=./pretrained/det_mv3_db_train/MobileNetV3_large_x0_5_pretrained

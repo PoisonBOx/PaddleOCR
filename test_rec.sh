@@ -1,0 +1,2 @@
+#python -m pdb tools/infer_rec.py -c configs/rec/rec_ppocrv4.yml -o Global.pretrained_model=./weights/inference Global.infer_img=data/20240608204149.jpg
+python tools/infer/predict_rec.py --image_dir="./data/20240608204149.jpg" --rec_model_dir="./weights/" --rec_image_shape="3, 32, 100" --rec_char_dict_path="ppocr/utils/en_dict.txt"

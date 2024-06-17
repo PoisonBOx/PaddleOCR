@@ -1,0 +1,3 @@
+# 将官网下载的标签文件转换为 train_icdar2015_label.txt
+python ppocr/utils/gen_label.py --mode="det" --root_path="C:/projects/PaddleOCR-release-2.7/data/det/train/imgs" --input_path="C:/projects/PaddleOCR-release-2.7/data/det/train/labels" --output_label="C:/projects/PaddleOCR-release-2.7/data/det/train/train_icdar2015_label.txt"
+python ppocr/utils/gen_label.py --mode="det" --root_path="C:/projects/PaddleOCR-release-2.7/data/det/eval/imgs" --input_path="C:/projects/PaddleOCR-release-2.7/data/det/eval/labels" --output_label="C:/projects/PaddleOCR-release-2.7/data/det/eval/eval_icdar2015_label.txt"

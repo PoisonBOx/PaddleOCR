@@ -720,18 +720,20 @@ def main(args):
         valid_image_file_list.append(image_file)
         img_list.append(img)
     try:
+        start = time.time()
         rec_res, _ = text_recognizer(img_list)
+        end = time.time()
 
     except Exception as E:
         logger.info(traceback.format_exc())
         logger.info(E)
         exit()
     for ino in range(len(img_list)):
-        logger.info("Predicts of {}:{}".format(valid_image_file_list[ino],
-                                               rec_res[ino]))
+        logger.info("Predicts of {}:{}, time:{}".format(valid_image_file_list[ino], rec_res[ino], end-start))
     if args.benchmark:
         text_recognizer.autolog.report()
 
 
 if __name__ == "__main__":
+    print(utility.parse_args())
     main(utility.parse_args())

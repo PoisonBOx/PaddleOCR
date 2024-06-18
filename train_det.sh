@@ -1,1 +1,1 @@
-python tools/train.py -c configs/det/det_mv3_db_medical.yml -o Global.pretrained_model=./pretrained/det_mv3_db_train/MobileNetV3_large_x0_5_pretrained
+python tools/train.py -c configs/det/ch_PP-OCRv4/ch_PP-OCRv4_det_medical.yml -o Global.pretrained_model=./pretrained/ch_PP-OCRv4_det_train/PPLCNetV3_x0_75_ocr_det

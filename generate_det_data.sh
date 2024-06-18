@@ -1,3 +1,5 @@
-# 将官网下载的标签文件转换为 train_icdar2015_label.txt
-python ppocr/utils/gen_label.py --mode="det" --root_path="C:/projects/PaddleOCR-release-2.7/data/det/train/imgs" --input_path="C:/projects/PaddleOCR-release-2.7/data/det/train/labels" --output_label="C:/projects/PaddleOCR-release-2.7/data/det/train/train_icdar2015_label.txt"
-python ppocr/utils/gen_label.py --mode="det" --root_path="C:/projects/PaddleOCR-release-2.7/data/det/eval/imgs" --input_path="C:/projects/PaddleOCR-release-2.7/data/det/eval/labels" --output_label="C:/projects/PaddleOCR-release-2.7/data/det/eval/eval_icdar2015_label.txt"
+#python ppocr/utils/gen_label.py --mode="det" --root_path="C:/projects/PaddleOCR-release-2.7/data/det/text/train/imgs" --input_path="C:/projects/PaddleOCR-release-2.7/data/det/text/train/labels" --output_label="C:/projects/PaddleOCR-release-2.7/data/det/text/train/train_medical_label.txt"
+#python ppocr/utils/gen_label.py --mode="det" --root_path="C:/projects/PaddleOCR-release-2.7/data/det/text/eval/imgs" --input_path="C:/projects/PaddleOCR-release-2.7/data/det/text/eval/labels" --output_label="C:/projects/PaddleOCR-release-2.7/data/det/text/eval/eval_medical_label.txt"
+
+python ppocr/utils/gen_label.py --mode="det" --root_path="/kaggle/input/medical-ocr-text-det-sample/text/train/imgs" --input_path="/kaggle/input/medical-ocr-text-det-sample/text/train/labels" --output_label="/kaggle/input/medical-ocr-text-det-sample/text/train/train_medical_label.txt"
+python ppocr/utils/gen_label.py --mode="det" --root_path="/kaggle/input/medical-ocr-text-det-sample/text/eval/imgs" --input_path="/kaggle/input/medical-ocr-text-det-sample/text/eval/labels" --output_label="/kaggle/input/medical-ocr-text-det-sample/text/eval/eval_medical_label.txt"

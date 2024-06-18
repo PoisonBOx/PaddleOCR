@@ -70,7 +70,7 @@ Train:
     name: SimpleDataSet
     data_dir: /kaggle/input/medical-ocr-text-det-sample/
     label_file_list:
-      - ./text/train/train_medical_label.txt
+      - ./train_medical_label.txt
     ratio_list: [1.0]
     transforms:
     - DecodeImage:
@@ -138,7 +138,7 @@ Eval:
     name: SimpleDataSet
     data_dir: /kaggle/input/medical-ocr-text-det-sample/
     label_file_list:
-      - ./text/eval/eval_medical_label.txt
+      - ./eval_medical_label.txt
     transforms:
     - DecodeImage:
         img_mode: BGR

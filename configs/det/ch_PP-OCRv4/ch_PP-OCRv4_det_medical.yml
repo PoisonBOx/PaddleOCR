@@ -1,16 +1,16 @@
 Global:
   debug: false
   use_gpu: true
-  epoch_num: &epoch_num 500
+  epoch_num: &epoch_num 2000
   log_smooth_window: 20
-  print_batch_step: 100
+  print_batch_step: 10
   save_model_dir: ./output/ch_PP-OCRv4
-  save_epoch_step: 10
+  save_epoch_step: 100
   eval_batch_step:
   - 0
   - 200
   cal_metric_during_train: false
-  checkpoints:
+  checkpoints: ./output/ch_PP-OCRv4/latest
   pretrained_model: ./pretrain/ch_PP-OCRv4_det_train/PPLCNetV3_x0_75_ocr_det
   save_inference_dir: null
   use_visualdl: false

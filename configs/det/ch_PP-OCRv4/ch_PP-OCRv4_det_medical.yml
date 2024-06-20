@@ -11,7 +11,7 @@ Global:
   - 200
   cal_metric_during_train: false
   checkpoints: ./output/ch_PP-OCRv4/latest
-  pretrained_model: ./pretrain/ch_PP-OCRv4_det_train/PPLCNetV3_x0_75_ocr_det
+  pretrained_model: ./pretrained/ch_PP-OCRv4_det_train/PPLCNetV3_x0_75_ocr_det
   save_inference_dir: null
   use_visualdl: false
   infer_img: doc/imgs_en/img_10.jpg

@@ -1,1 +1,1 @@
-python tools/infer/predict_det.py --image_dir="C:/projects/test_imgs/00M61V_2_0.jpg" --det_model_dir="./weights/tmp/" --det_algorithm="DB"
+python tools/infer/predict_det.py --image_dir="C:/projects/test_imgs/page0.jpg" --det_model_dir="./weights/tmp/" --det_algorithm="DB"

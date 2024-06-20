@@ -8,7 +8,7 @@ Global:
   save_epoch_step: 100
   eval_batch_step:
   - 0
-  - 300000
+  - 100
   cal_metric_during_train: false
   checkpoints: ./output/ch_PP-OCRv4_block/latest
   pretrained_model: ./pretrained/ch_PP-OCRv4_det_train/PPLCNetV3_x0_75_ocr_det
@@ -166,6 +166,6 @@ Eval:
   loader:
     shuffle: false
     drop_last: false
-    batch_size_per_card: 32
+    batch_size_per_card: 1
     num_workers: 8
 profiler_options: null

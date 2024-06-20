@@ -10,7 +10,7 @@ Global:
   - 0
   - 300
   cal_metric_during_train: false
-  checkpoints:
+  checkpoints: ./output/ch_PP-OCRv4_block/latest
   pretrained_model: ./pretrained/ch_PP-OCRv4_det_train/PPLCNetV3_x0_75_ocr_det
   save_inference_dir: null
   use_visualdl: false

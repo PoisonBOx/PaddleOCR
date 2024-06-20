@@ -8,7 +8,7 @@ Global:
   save_epoch_step: 100
   eval_batch_step:
   - 0
-  - 300
+  - 300000
   cal_metric_during_train: false
   checkpoints: ./output/ch_PP-OCRv4_block/latest
   pretrained_model: ./pretrained/ch_PP-OCRv4_det_train/PPLCNetV3_x0_75_ocr_det

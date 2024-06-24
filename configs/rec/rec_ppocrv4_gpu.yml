@@ -3,13 +3,13 @@ Global:
   epoch_num: 2000
   log_smooth_window: 20
   print_batch_step: 50
-  save_model_dir: ./output/rec/rec_ppocr_v4/
+  save_model_dir: ./output/rec/rec_ppocr_v4_50w/
   save_epoch_step: 100
   # evaluation is run every 2000 iterations
   eval_batch_step: [0, 300]
   cal_metric_during_train: True
   pretrained_model: ./pretrained/ch_PP-OCRv4_rec_train/student
-  checkpoints: ./output/rec/rec_ppocr_v4/
+  checkpoints: #./output/rec/rec_ppocr_v4_50w/
   save_inference_dir:
   use_visualdl: False
   infer_img: doc/imgs_words_en/word_10.png

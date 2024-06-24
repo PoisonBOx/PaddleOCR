@@ -72,7 +72,7 @@ Metric:
 Train:
   dataset:
     name: SimpleDataSet
-    data_dir: /kaggle/input/ocr-rec-train-eval-sample-data/rec/train/imgs/ #./data/rec/train/imgs/
+    data_dir: /kaggle/input/ocr-rec-train-eval-sample-data/rec/train/imgs/images/ #./data/rec/train/imgs/
     label_file_list:
     - /kaggle/input/ocr-rec-train-eval-sample-data/rec/train/train_list.txt #./data/rec/train/train_list.txt
     transforms:
